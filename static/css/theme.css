@@ -45,3 +45,20 @@ body *::selection {
     color: var(--text-color) !important;
     background-color: var(--primary-color) !important;
 }
+
+.attachments.orange {
+    margin-bottom: 30px;
+}
+
+.attachments.orange label {
+    padding: 0 10px;
+    background: #e98e40;
+    display: block
+  }
+
+  .attachments.orange .attachments-files {
+    padding: 0 20px;
+    padding-bottom: 5px;
+    border: #e98e40 solid 1px;
+    border-top: none;
+  }

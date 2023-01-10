@@ -9,9 +9,7 @@
                 <h2>
                     {{ .Site.Params.hero.title }}
                 </h2>
-                <h3>
-                    {{ .Site.Params.hero.subtitle }}
-                </h3>
+                <h3 id="type"></h3>
                 <p class="hero-content">
                     {{ .Site.Params.hero.content | markdownify }}
                 </p>
@@ -306,4 +304,15 @@
         </svg>
     </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<script>
+    const content = {{.Site.Params.hero.subtitle}}
+    const p = 200;
+    const instance = new TypeIt("#type", {loop: true});
+    
+    for(const str of content) {
+      instance.type(str).pause(p).delete(0 - str.length);
+    }
+    instance.go();
+</script>
 {{ end }}
