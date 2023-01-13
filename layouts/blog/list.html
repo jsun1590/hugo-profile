@@ -10,7 +10,7 @@
         {{ range .Paginator.Pages }}
         <div class="col-lg-4 col-md-6 my-3">
             <div class="card-columns">
-                <div class="card h-100">
+                <div class="card">
                     {{ if and (not (.Site.Params.listPages.disableFeaturedImage | default false)) (.Params.image) }}
                     <div class="card-header">
                         <a href="{{ .RelPermalink }}">

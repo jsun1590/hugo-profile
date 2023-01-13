@@ -5,6 +5,7 @@
     cursor: context-menu;
     overflow: hidden;
     border: none;
+    height: 600px;
 }
 
 #list-page .card a {
