@@ -1,5 +1,8 @@
 {{ define "head" }}
 <meta name="description" content={{ .Site.Params.description }}>
+
+<!-- fontawesome -->
+<script defer src="{{ .Site.Params.staticPath }}/fontawesome-5/all-5.15.4.js"></script>
 {{ end }}
 
 {{ define "title" }}
@@ -9,6 +12,15 @@
 {{ define "main" }}
 <div class="container py-5 text-center">
     <h1 style="margin-bottom: 10px;">404 Page Not Found</h1>
-    <img src="{{ .Site.Params.staticPath }}/404.gif" alt="404 page not found" class="img-fluid" width="20%">
+    <video id="video" loop src="{{ .Site.Params.staticPath }}/404.mp4" autoplay muted alt="404 page not found" class="img-fluid" width="20%" />
 </div>
+<a onclick="toggleMute()" style="bottom: 1em; left: 1em; position: sticky;"><i class="fas fa-volume-up"></i></a>
+
+<script>
+var video = document.getElementById('video');
+
+function toggleMute(){
+    video.muted = !video.muted;
+}
+</script>
 {{ end }}
