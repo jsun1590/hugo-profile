@@ -232,29 +232,29 @@
 }
 
 #single aside.social .social-content {
+    display: flex;
     margin-bottom: 1em;
-    opacity: 0.9;
+    gap: 10px;
 }
 
-#single aside.social .social-content ul {
-    margin-bottom: 1em;
-    opacity: 0.9;
+#single aside.social .social-content a svg {
+    height: 1em;
+    width: 1em;
 }
 
-#single aside.social .social-content ul li a {
+#single aside.social .social-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     border: 1px solid var(--primary-color);
-    padding: .7rem;
     color: var(--text-color);
     border-radius: 10px;
-    overflow: hidden;
+    width: 42px;
+    height: 42px;
 }
 
-#single aside.social .social-content ul li {
-    margin: .7rem .5rem;
-    margin-left: 0;
-}
-
-#single aside.social .social-content ul li:hover a {
+#single aside.social .social-content a:hover {
     opacity: .8;
     color: var(--primary-color);
 }
