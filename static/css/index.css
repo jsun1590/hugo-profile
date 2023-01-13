@@ -416,6 +416,16 @@ header .navbar.animate {
   color: var(--text-secondary-color) !important;
 }
 
+#education table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+#education td {
+  padding: 10px 0;
+}
+
 #education .row .index {
   opacity: 0.8;
   padding: 13px 20px;
