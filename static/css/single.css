@@ -4,6 +4,10 @@
     font-size: 17px;
 }
 
+#single img {
+    width: 100%;
+}
+
 #single .title > h1 {
     opacity: 0.8;
     color: var(--text-color) !important;
